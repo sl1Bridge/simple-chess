@@ -8,7 +8,9 @@ const ChessHeader = () => {
   return (
     <div className={classes.headerContainer}>
       <div>
-        <p className={classes.headerTypography}>Simple Chess</p>
+        <p className={classes.headerTypography}>
+          Simple Chess
+        </p>
       </div>
     </div>
   );

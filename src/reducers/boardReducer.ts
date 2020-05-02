@@ -1,14 +1,20 @@
 import {createBoardCells} from '../utils/boardCells';
 
+import {CellEmploymentActionType, DispatchActionCellType} from '../actions/actionCreators';
+
 const cells = createBoardCells();
 
-const innitialState = {
+const initialState = {
   cells
 };
 
-const boardReducer = (state = innitialState, action: any) => {
-  if (action.type === ' ') {
-    console.log(' ');
+const boardReducer = (state = initialState, action: CellEmploymentActionType) => {
+  const {cells, type} = action;
+  if (type === DispatchActionCellType) {
+    return {
+      ...state,
+      cells
+    };
   }
   return state;
 };

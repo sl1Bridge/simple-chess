@@ -1,3 +1,5 @@
+import nextId from 'react-id-generator';
+
 import {Cell} from '../types/chess';
 
 export const createBoardCells = () => {
@@ -9,7 +11,8 @@ export const createBoardCells = () => {
     cells.push({
       xPosition: x,
       yPosition: y,
-      isEngaged: (y === 1 || y === 2 || y === 7 || y === 8)
+      isEngaged: (y === 1 || y === 2 || y === 7 || y === 8),
+      id: nextId(),
     });
     x += 1;
     if (x === 9) {
