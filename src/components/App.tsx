@@ -1,8 +1,10 @@
 import React from 'react';
 
+import ChessHeader from './header/ChessHeader';
+
 const App = () => (
   <div>
-    I am alive, boyyy
+    <ChessHeader />
   </div>
 );
 
