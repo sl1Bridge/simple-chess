@@ -16,7 +16,7 @@ const Board = () => {
           (i >= 0 && i < 8 && i % 2 === 0) || (i >= 9 && i < 16 && i % 2 !== 0) || (i >= 16 && i < 24 && i % 2 === 0) || (i >= 25 && i < 32 && i % 2 !== 0) ||
           (i >= 32 && i < 40 && i % 2 === 0) || (i >= 41 && i < 49 && i % 2 !== 0) || (i >= 48 && i < 56 && i % 2 === 0) || (i >= 56 && i < 64 && i % 2 !== 0) ?
             <CellComponent key={cell.id}
-                           backgroundColor="#f3e0b8"
+                           backgroundColor="#603a27"
                            id={cell.id}
             /> :
             <CellComponent key={cell.id}

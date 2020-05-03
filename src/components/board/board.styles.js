@@ -7,7 +7,7 @@ export default createUseStyles({
     height: '440px',
     background: '#c9945e',
     position: 'relative',
-    border: '10px double #603a27',
+    border: '10px double #f3e0b8',
     margin: '250px auto 0 auto',
     '&::after': {
       content: '""',
@@ -28,18 +28,18 @@ export default createUseStyles({
     color: 'white',
   },
   leftNums: {
-    left: '-26px',
+    left: '-27px',
   },
   rightNums: {
-    left: '455px',
+    left: '457px',
     transform: 'rotate(180deg)',
   },
   topLetters: {
-    top: '-28px',
+    top: '-30px',
     transform: 'rotate(180deg)',
   },
   bottomLetters: {
-    bottom: '-28px',
+    bottom: '-30px',
   },
   cellsContainer: {
     display: 'flex',
