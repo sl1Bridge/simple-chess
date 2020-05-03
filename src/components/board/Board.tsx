@@ -17,11 +17,15 @@ const Board = () => {
           (i >= 32 && i < 40 && i % 2 === 0) || (i >= 41 && i < 49 && i % 2 !== 0) || (i >= 48 && i < 56 && i % 2 === 0) || (i >= 56 && i < 64 && i % 2 !== 0) ?
             <CellComponent key={cell.id}
                            backgroundColor="#603a27"
+                           figure={cell.figure}
                            id={cell.id}
+                           teamColor={cell.isEngagedBy}
             /> :
             <CellComponent key={cell.id}
                            backgroundColor="#c6915b"
+                           figure={cell.figure}
                            id={cell.id}
+                           teamColor={cell.isEngagedBy}
             />))}
       </BoardFrame>
     </div>
