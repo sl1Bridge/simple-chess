@@ -21,7 +21,8 @@
     "preserveConstEnums": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "forceConsistentCasingInFileNames": true
   },
   "include": [
     "src"

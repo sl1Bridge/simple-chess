@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {FC} from 'react';
 import cx from 'classnames';
 
-import useStyles from './boardFrame.styles';
+import CellComponent from './CellComponent';
 
-const BoardFrame = () => {
+import useStyles from './board.styles';
+
+interface Props {
+  children: ReturnType<typeof CellComponent>[];
+}
+
+const BoardFrame: FC<Props> = ({children}) => {
   const classes = useStyles();
   const numberDesignations = [1, 2, 3, 4, 5, 6, 7, 8];
   const lettersDesignations = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
@@ -42,6 +48,9 @@ const BoardFrame = () => {
         >
           {item}
         </p>)}
+      <div className={classes.cellsContainer}>
+        {children}
+      </div>
     </div>
   );
 };

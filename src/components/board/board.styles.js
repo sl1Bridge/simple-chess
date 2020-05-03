@@ -1,6 +1,7 @@
 import {createUseStyles} from 'react-jss';
 
 export default createUseStyles({
+  // Board Frame
   boardFrame: {
     width: '440px',
     height: '440px',
@@ -39,5 +40,16 @@ export default createUseStyles({
   },
   bottomLetters: {
     bottom: '-28px',
+  },
+  cellsContainer: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    width: '440px',
+    height: '440px',
+  },
+  // Cell Component Styles
+  cellContainer: {
+    minWidth: '55px',
+    height: '55px'
   }
 });
