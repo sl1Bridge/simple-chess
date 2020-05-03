@@ -43,7 +43,7 @@ export default createUseStyles({
   },
   cellsContainer: {
     display: 'flex',
-    flexWrap: 'wrap',
+    flexWrap: 'wrap-reverse',
     width: '440px',
     height: '440px',
   },

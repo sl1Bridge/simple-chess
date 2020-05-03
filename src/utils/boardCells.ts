@@ -1,8 +1,16 @@
 import nextId from 'react-id-generator';
 
+import { generateFigure } from './generateFigures';
+
 import {Cell} from '../types/chess';
 
-export const createBoardCells = () => {
+export enum Team {
+  Black = 'black',
+  White = 'white',
+  Non = 'none',
+}
+
+export const generateBoardCells = () => {
   const cells: Cell[] = [];
   let x = 1;
   let y = 1;
@@ -11,7 +19,8 @@ export const createBoardCells = () => {
     cells.push({
       xPosition: x,
       yPosition: y,
-      isEngaged: (y === 1 || y === 2 || y === 7 || y === 8),
+      isEngagedBy: (y === 1 || y === 2) ? Team.White : (y === 7 || y === 8) ? Team.Black : Team.Non,
+      figure: generateFigure(x, y),
       id: nextId(),
     });
     x += 1;

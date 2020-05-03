@@ -1,6 +1,10 @@
+import {Team} from '../utils/boardCells';
+import {Figure} from '../utils/generateFigures';
+
 export interface Cell {
   xPosition: number;
   yPosition: number;
-  isEngaged: boolean;
+  isEngagedBy: Team;
+  figure: Figure;
   id: string;
 }

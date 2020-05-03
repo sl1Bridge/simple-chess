@@ -1,8 +1,8 @@
-import {createBoardCells} from '../utils/boardCells';
+import {generateBoardCells} from '../utils/boardCells';
 
 import {CellEmploymentActionType, DispatchActionCellType} from '../actions/actionCreators';
 
-const cells = createBoardCells();
+const cells = generateBoardCells();
 
 const initialState = {
   cells
