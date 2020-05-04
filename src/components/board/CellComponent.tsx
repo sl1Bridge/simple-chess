@@ -1,9 +1,9 @@
 import React, {FC} from 'react';
 
+import FigureImgComponent from './FigureImgComponent';
+
 import {Team} from '../../utils/boardCells';
 import {Figure} from '../../utils/generateFigures';
-
-import PawnBlack from '../assets/img/pawn_black.svg';
 
 import useStyles from './board.styles';
 
@@ -22,9 +22,11 @@ const CellComponent: FC<Props> = ({id, backgroundColor, teamColor, figure}) => {
          id={id}
          style={{backgroundColor}}
     >
-      <div>
-        { teamColor !== 'none' ?
-          <img src={PawnBlack} /> : null}
+      <div className={classes.figureContainer}>
+        { teamColor !== 'none' ? <FigureImgComponent figure={figure}
+                                                     teamColor={teamColor}
+        />
+          : null}
       </div>
     </div>
   );

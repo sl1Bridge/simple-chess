@@ -51,5 +51,13 @@ export default createUseStyles({
   cellContainer: {
     minWidth: '55px',
     height: '55px'
+  },
+  figureContainer: {
+    textAlignLast: 'center',
+    marginTop: '5px',
+  },
+  figureSize: {
+    height: '44px',
+    width: '44px',
   }
 });

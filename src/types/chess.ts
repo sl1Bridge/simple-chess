@@ -8,3 +8,8 @@ export interface Cell {
   figure: Figure;
   id: string;
 }
+
+export interface FigureImgType {
+  figureName: string;
+  src: string;
+}
